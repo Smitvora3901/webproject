@@ -13,6 +13,8 @@ app.set('view engine', 'hbs');
 app.set('views', template_path);
 hbs.registerPartials(partials_path);
 
+
+
 app.use(express.static(static_path));
 
 app.get("", (req, res) => {
